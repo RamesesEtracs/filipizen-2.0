@@ -1,7 +1,9 @@
 import React from 'react';
 import { Stack } from 'expo-router';
 import  { View, Text } from 'react-native';
-import Login from '../components/login/Login';
+import Login from '../src/login/Login'
+
+
 
 
 const Home = () => {
@@ -10,9 +12,10 @@ const Home = () => {
             <Stack.Screen 
             options={{
                 headerShown: false
-            }}
-            />
-            <Login />
+            }}/>
+           <Login />
+            
+
         </View>
     );
 }
