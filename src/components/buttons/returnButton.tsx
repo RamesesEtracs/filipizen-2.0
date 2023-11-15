@@ -4,8 +4,9 @@ import { Ionicons } from '@expo/vector-icons';
 const ReturnButton = ({onPress}) => {
     return (
       <View style={{
-        marginTop: 30,   
-        padding: 15,
+        position: 'absolute',
+        top: 20,
+        left: 10,
       }}>
         <Pressable onPress={onPress}>
         <Ionicons name="chevron-back-sharp" size={30} color="black" />
