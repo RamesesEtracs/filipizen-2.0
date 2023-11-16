@@ -4,8 +4,8 @@ import  { View, Text, StyleSheet } from 'react-native';
 
 
 //components
-import Login from '@src/login/Login';
-import WelcomePage from '@src/welcomePage/welcomePage';
+import Login from '@src/screens/login/Login';
+import WelcomePage from '@src/screens/welcome/welcomeScreen';
 
 
 

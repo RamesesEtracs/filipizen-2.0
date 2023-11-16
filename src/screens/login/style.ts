@@ -7,7 +7,7 @@ const {width} = Dimensions.get('window')
 
 const dialPadSize = width * .2
 const dialPadTextSize = dialPadSize * .4
-import { color,font } from "../../constants"
+import { color,font } from "../../../constants"
 
 
 

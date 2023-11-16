@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 
 //styling
-import { textColor, color } from '../../../../constants/themes';
+import { textColor, color } from '../../../constants/themes';
 
 const buttonStyles = StyleSheet.create({
   container: {

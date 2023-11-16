@@ -7,8 +7,8 @@ import { Stack } from "expo-router";
 
 
 //styling
-import styles from "./welcomePage.style";
-import buttonStyles from "@components/buttons/Button/button.style";
+import styles from "./style";
+import buttonStyles from "@components/Buttons/button.style";
 
 
 //constants
@@ -16,7 +16,7 @@ import { color, textColor } from "@constants";
 import { images } from "@constants";
 
 //components
-import Button from "@components/buttons/Button/button";
+import Button from "@components/Buttons/button";
 
 
 
