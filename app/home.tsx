@@ -1,9 +1,10 @@
 import React from 'react';
 import { Stack } from 'expo-router';
 import  { View, Text } from 'react-native';
-import Login from '../src/login/Login'
+import Login from '../src/login/Login';
 import Registration from '../src/registration/Registration';
-import CreateMpin from '../src/registration/CreateMpin';
+import CreateMPIN from '../src/registration/CreateMpin';
+import Congratulations from '../src/registration/Congratulations';
 
 
 const Home = () => {
@@ -14,9 +15,9 @@ const Home = () => {
                 headerShown: false
             }}/>
            {/*<Login />*/}
-           <Registration onPress={undefined} />
-           {/*<CreateMpin onPress={undefined} />*/}
-
+           {/*<Registration onPress={undefined} />*/}
+           <CreateMPIN onPress={undefined} />
+           {/*<Congratulations onPress={undefined} />*/}
         </View>
     );
 }

@@ -2,22 +2,19 @@ import React from "react";
 import { StyleSheet } from "react-native";
 import { color,font } from "../../constants"
 
-
-const styles = StyleSheet.create({
+const styles = StyleSheet.create ({
     container: {
         flex: 1,
         backgroundColor: 'white',
         alignItems: 'center',
     },
     image: {
-        width: 338,
-        height: 231,
-        justifyContent: 'center',
-        alignItems: 'center',
+        padding: 30,
+        height: 280,
     },
     registrationform: {
         width: 385,
-        height:481,
+        height:480,
         borderRadius: 40,
         borderBottomLeftRadius: 0,
         borderBottomRightRadius: 0,
@@ -40,16 +37,11 @@ const styles = StyleSheet.create({
         flex: 1,
         marginLeft: 10,
     },
-    emailinput: {
+    emailInput: {
         justifyContent:'center',
         alignItems: 'center',
         paddingTop: 24,
 
-    },
-    phoneinput: {
-        justifyContent:'center',
-        alignItems: 'center',
-        paddingTop: 11,
     },
     inputContainer:{
         flexDirection: 'row',
@@ -59,6 +51,12 @@ const styles = StyleSheet.create({
         padding: 11,
         paddingHorizontal: 18,
         backgroundColor: 'white',
+    },
+    phoneInput: {
+        justifyContent:'center',
+        alignItems: 'center',
+        paddingTop: 11,
+
     },
     click: {
         paddingLeft: 29,
@@ -79,7 +77,7 @@ const styles = StyleSheet.create({
     buttonContainer: {
         justifyContent: 'center',
         alignItems: 'center',
-        padding: 25,
+        padding: 90,
     }
-});
+})
 export default styles;

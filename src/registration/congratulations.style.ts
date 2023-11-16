@@ -1,4 +1,3 @@
-import React from "react";
 import { StyleSheet } from "react-native";
 import { color,font } from "../../constants"
 
@@ -12,54 +11,30 @@ const styles = StyleSheet.create ({
         padding: 50,
         height: 280,
     },
-    registrationform: {
+    congratsContainer: {
         width: 385,
         height:480,
         borderRadius: 40,
         borderBottomLeftRadius: 0,
         borderBottomRightRadius: 0,
         backgroundColor: '#FFF8EB',
+        alignItems: 'center',
     },
-    create: {
-        paddingLeft: 29 ,
+    check: {
+        paddingTop: 8
+    },
+    congratulations: {
         fontFamily: 'Roboto',
-        color: color.gray,
-        fontSize: 24,
+        fontSize: 26,
         fontWeight: 'bold',
-        paddingTop: 31,
+        color: color.gray,
     },
-    start: {
-        paddingLeft: 29,
-        paddingTop: 5,
+    statement: {
         color: color.darkGray,
+        paddingTop: 13,
+        fontFamily: 'Roboto',
     },
-    mpin: {
-        flex: 1,
-        marginLeft: 10,
-        
-    },
-    emailInput: {
-        justifyContent:'center',
-        alignItems: 'center',
-        paddingTop: 24,
-
-    },
-    inputContainer:{
-        flexDirection: 'row',
-        alignItems: 'center',
-        width: 340,
-        borderRadius: 38,
-        padding: 11,
-        paddingHorizontal: 18,
-        backgroundColor: 'white',
-    },
-    phoneInput: {
-        justifyContent:'center',
-        alignItems: 'center',
-        paddingTop: 11,
-
-    },
-    buttonNext:{
+    buttonOk:{
         width: 340,
         height: 38,
         paddingVertical: 5,
@@ -73,12 +48,8 @@ const styles = StyleSheet.create ({
     buttonContainer: {
         justifyContent: 'center',
         alignItems: 'center',
-    },
-    statement: {
-        gap: 3,
-        marginTop: 110,
-        paddingLeft:20,
-        paddingRight: 20,
+        paddingTop: 260,
     },
 })
+
 export default styles;
