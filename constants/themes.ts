@@ -8,9 +8,18 @@ const color = {
     fadedWhite: "#FFF8EB",
 
     gray: "#3D3D3D",
+    white: '#FFFFFF',
     darkGray: "#565656",
     lightGray: "#BBBBBB"
 }
+
+const textColor = {
+    black: '#222222',
+    lightBlack: '#3D3D3D',
+    darkGray: "#565656",
+    fadedGrey: '#BBBBBB',
+    white: '#FFFFFF',
+  }
 
 
 const font = {
@@ -22,5 +31,5 @@ const font = {
 }
 
 
-export { color, font };
+export { color, font, textColor };
 
