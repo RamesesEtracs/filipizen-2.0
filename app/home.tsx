@@ -6,6 +6,7 @@ import  { View, Text, StyleSheet } from 'react-native';
 //components
 import Login from '@src/screens/login/Login';
 import WelcomePage from '@src/screens/welcome/welcomeScreen';
+import BiometricFunction from '@src/biometricFunction';
 
 
 
@@ -13,7 +14,8 @@ import WelcomePage from '@src/screens/welcome/welcomeScreen';
 const Home = () => {
     return (
         <View style= {styles.container}>
-           <WelcomePage/>
+           {/* <WelcomePage/> */}
+           <BiometricFunction/>
         </View>
     );
 }

@@ -7,10 +7,10 @@ type textProps = {
  
 //type for Button
 type buttonProperties = {
-buttonName: string
-buttonColor: string
-buttonNameColor: string
-buttonLayout: object
-onPress?: () => void
+  buttonName: string
+  buttonColor: string
+  buttonNameColor: string
+  buttonLayout: object
+  onPress() : any;
 }
   
