@@ -10,7 +10,7 @@
     "name": "mobile-deployments",
     "slug": "mobile-deployments",
     "splash": {
-    "image": "./assets/images/logo.png",
+    "image": "./assets/images/splash.png",
     "resizeMode": "contain",
     "backgroundColor": "#ffffff"
     },

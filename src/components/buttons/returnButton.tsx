@@ -9,7 +9,7 @@ const ReturnButton = ({onPress}) => {
         left: 10,
       }}>
         <Pressable onPress={onPress}>
-        <Ionicons name="chevron-back-sharp" size={30} color="black" />
+          <Ionicons name="chevron-back-sharp" size={30} color="black" />
         </Pressable>
         
       </View>

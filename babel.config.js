@@ -6,6 +6,16 @@ module.exports = function (api) {
       "@babel/plugin-proposal-export-namespace-from",
       "react-native-reanimated/plugin",
       require.resolve("expo-router/babel"),
+      [
+        "module-resolver", {
+          alias: {
+            '@components': './src/components',
+            '@constants': './constants',
+            '@src': './src'
+          },
+        }
+      ]
     ],
   };
 };
+
