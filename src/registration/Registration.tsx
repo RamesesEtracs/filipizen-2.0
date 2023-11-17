@@ -1,11 +1,10 @@
 import React, {useState} from 'react';
-import {SafeAreaView,View, Text, TouchableOpacity, Image, TextInput, KeyboardAvoidingView, Platform, useWindowDimensions } from 'react-native';
+import {SafeAreaView,View, Text, TouchableOpacity, Image, TextInput, KeyboardAvoidingView, Platform } from 'react-native';
 import { FontAwesome5, Feather } from '@expo/vector-icons';
 import styles from '../registration/registration.style';
 import ReturnButton from '../components/buttons/returnButton';
 
 export default function CreateAccount ({onPress}) {
-    const { height } = useWindowDimensions();
     const [email, setEmail ] = useState('');
     const [number, onChangeNumber] = React.useState('');
 
@@ -15,7 +14,8 @@ export default function CreateAccount ({onPress}) {
 
     return (
         <SafeAreaView style={{flex:1}}>
-            <KeyboardAvoidingView 
+            
+            <KeyboardAvoidingView //handling the keyboard visibility and ensuring that the user interface adjusts appropriately when the keyboard is displayed. (Not yet working)
             style={{flex: 1}}
             keyboardVerticalOffset={100}
             behavior={Platform.OS === "ios" ? "padding" : undefined}
