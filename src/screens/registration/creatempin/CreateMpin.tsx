@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import { color,font } from "@constants"
 import {SafeAreaView,View, Text, TouchableOpacity, Image, TextInput, KeyboardAvoidingView, Platform, } from 'react-native';
-import styles from '@src/registration/creatempin.style';
+import styles from '@src/screens/registration/creatempin/creatempin.style';
 import ReturnButton from '@components/buttons/returnButton';
+import { images } from '@constants';
 
 export default function CreateMPIN ({onPress}) {
     const [password, setPassword] = useState('');
@@ -34,7 +35,7 @@ export default function CreateMPIN ({onPress}) {
             <View>   
             <ReturnButton onPress={undefined} />
             <View style={styles.image}>
-            <Image source={require('../../assets/images/writing.png')}
+            <Image source={images.writing}
             />
             </View>
             

@@ -3,9 +3,9 @@ import { Stack } from 'expo-router';
 
 import  { View, Text, StyleSheet } from 'react-native';
 import Login from '@src/screens/login/Login';
-import Registration from '../src/registration/Registration';
-import CreateMPIN from '../src/registration/CreateMpin';
-import Congratulations from '../src/registration/Congratulations';
+import Registration from '../src/screens/registration/register/Registration';
+import CreateMPIN from '../src/screens/registration/creatempin/CreateMpin';
+import Congratulations from '../src/screens/registration/congratulations/Congratulations';
 import WelcomePage from '@src/screens/welcome/welcomeScreen';
 import BiometricFunction from '@src/biometricFunction';
 

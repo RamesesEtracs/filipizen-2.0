@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import {SafeAreaView,View, Text, TouchableOpacity, Image, TextInput, KeyboardAvoidingView, Platform } from 'react-native';
 import { FontAwesome5, Feather } from '@expo/vector-icons';
-import styles from '@src/registration/registration.style';
+import styles from '@src/screens/registration/register/registration.style';
 import ReturnButton from '@components/buttons/returnButton';
+import { images } from '@constants';
 
 export default function CreateAccount ({onPress}) {
     const [email, setEmail ] = useState('');
@@ -24,7 +25,7 @@ export default function CreateAccount ({onPress}) {
             
             <ReturnButton onPress={undefined} />
             <View style={styles.image}>
-            <Image source={require('../../assets/images/hello.png')}
+            <Image source={images.hello}
             />
             </View>
             

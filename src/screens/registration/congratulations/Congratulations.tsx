@@ -1,16 +1,17 @@
 import {SafeAreaView, View, Text, TouchableOpacity, Image } from 'react-native';
-import styles from '../registration/congratulations.style';
+import styles from '../congratulations/congratulations.style';
 import ReturnButton from '@components/buttons/returnButton';
+import { images } from '@constants';
 
 export default function Congratulations ({onPress}) {
     return (
         <SafeAreaView style={styles.container}>
             <View style={styles.image}>
-            <Image source={require('../../assets/images/congrats.png')} />
+            <Image source={images.congrats} />
             </View>
             <View style={styles.congratsContainer}>
                 <View style={styles.check}>
-                <Image source={require('../../assets/images/check.png')} />
+                <Image source={images.check} />
                 </View>
                 <Text style={styles.congratulations}>Congratulations!</Text>
                 <Text style={styles.statement}>Your Filipizen account has been created successfully.</Text>
