@@ -9,6 +9,7 @@ const styles = StyleSheet.create ({
     },
     image: {
         padding: 50,
+        marginTop: 20,
         height: 280,
     },
     congratsContainer: {

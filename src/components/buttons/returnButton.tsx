@@ -5,7 +5,7 @@ const ReturnButton = ({onPress}) => {
     return (
       <View style={{
         position: 'absolute',
-        top: 20,
+        top: 60,
         left: 10,
       }}>
         <Pressable onPress={onPress}>

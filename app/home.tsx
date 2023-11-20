@@ -18,10 +18,10 @@ const Home = () => {
                 headerShown: false
             }}/>
             {/*<WelcomePage />*/}
-           <Login />
+           {/*<Login />*/}
           {/*<Registration onPress={undefined} />*/}
            {/*<CreateMPIN onPress={undefined} />*/}
-           {/*<Congratulations onPress={undefined} />*/}
+           <Congratulations onPress={undefined} />
         </View>
     );
 }

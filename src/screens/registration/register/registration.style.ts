@@ -9,7 +9,7 @@ const styles = StyleSheet.create ({
         alignItems: 'center',
     },
     image: {
-        padding: 30,
+        marginTop: 30,
         height: 280,
     },
     registrationform: {
