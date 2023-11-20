@@ -8,7 +8,7 @@ import { Stack } from "expo-router";
 
 //styling
 import styles from "./style";
-import buttonStyles from "@components/Buttons/button.style";
+import buttonStyles from "@components/buttons/button.style";
 
 
 //constants
@@ -16,14 +16,8 @@ import { color, textColor } from "@constants";
 import { images } from "@constants";
 
 //components
-import Button from "@components/Buttons/button";
+import Button from "@components/buttons/button";
 
-
-
-const textContent: textProps = {
-    header: 'All in one app',
-    body: 'Experience ease of doing business with the government.',
-  }
 
 const WelcomePage = () => {
   return (
@@ -87,20 +81,21 @@ const WelcomePage = () => {
 
           <View style={styles.contentContainer}>
             <View style={styles.textContainer}>
-                <Text style={styles.textHeader}>{textContent.header}</Text>
-                <Text style={styles.textBody}>{textContent.body}</Text>
+                <Text style={styles.textHeader}>All in one app</Text>
+                <Text style={styles.textBody}>Experience ease of doing business with the government.</Text>
             </View>  
             <View style={buttonStyles.customButtonContainer}>
               <Button
-              buttonLayout={{
-                  width: 190,
+                buttonLayout={{
+                  width: 307,
                   height: 40,
                   borderRadius: 25,
-              }}
-              buttonName="Create an Account"
-              buttonColor={color.primary}
-              buttonNameColor={textColor.white}
-              />
+                }}
+                buttonName="Create an Account"
+                buttonColor={color.primary}
+                buttonNameColor={textColor.white} onPress={function () {
+                  throw new Error("Function not implemented.");
+                } }              />
             </View>
           </View>
         </View>

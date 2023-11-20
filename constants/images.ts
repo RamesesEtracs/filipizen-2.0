@@ -1,6 +1,8 @@
-import guyHoldingPhone from '../assets/images/guyHoldingPhone.png';
+const guyHoldingPhone = require('../assets/images/guyHoldingPhone.png');
+const logo = require('../assets/images/logo.png');
 
 
 export const images = {
-    guyHoldingPhone
+    guyHoldingPhone,
+    logo
 }

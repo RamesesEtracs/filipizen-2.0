@@ -17,8 +17,9 @@ const Home = () => {
             options={{
                 headerShown: false
             }}/>
+            {/*<WelcomePage />*/}
            <Login />
-           {/*<Registration onPress={undefined} />*/}
+          {/*<Registration onPress={undefined} />*/}
            {/*<CreateMPIN onPress={undefined} />*/}
            {/*<Congratulations onPress={undefined} />*/}
         </View>

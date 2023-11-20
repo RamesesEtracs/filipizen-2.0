@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 
 //styling
-import { textColor, color } from '../../../constants/themes';
+import { textColor, color } from '@constants';
 
 const buttonStyles = StyleSheet.create({
   container: {
@@ -13,7 +13,7 @@ const buttonStyles = StyleSheet.create({
     flexDirection: 'row',
     paddingHorizontal: 25,
     top: 300,
-    marginTop: 70
+    marginTop: 90
   },
 })
 

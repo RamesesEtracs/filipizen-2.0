@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import {SafeAreaView,View, Text, TouchableOpacity, Image, TextInput, KeyboardAvoidingView, Platform } from 'react-native';
 import { FontAwesome5, Feather } from '@expo/vector-icons';
-import styles from '../registration/registration.style';
-import ReturnButton from '../components/buttons/returnButton';
+import styles from '@src/registration/registration.style';
+import ReturnButton from '@components/buttons/returnButton';
 
 export default function CreateAccount ({onPress}) {
     const [email, setEmail ] = useState('');

@@ -1,6 +1,6 @@
 import {SafeAreaView, View, Text, TouchableOpacity, Image } from 'react-native';
 import styles from '../registration/congratulations.style';
-import ReturnButton from '../components/buttons/returnButton';
+import ReturnButton from '@components/buttons/returnButton';
 
 export default function Congratulations ({onPress}) {
     return (

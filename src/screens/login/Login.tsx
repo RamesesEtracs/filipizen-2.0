@@ -3,6 +3,8 @@ import { StatusBar } from "expo-status-bar";
 import { Ionicons, Octicons} from '@expo/vector-icons'
 import styles from  "./style";
 import React, { useState } from "react";
+import { images } from "@constants";
+
 
 const {width} = Dimensions.get('window')
 
@@ -70,17 +72,10 @@ export default function Login() {
     console.log(code)
     return (
         <View style={styles.container}>
-            <Image source={require('../../assets/images/logo-filipizen.png')}
+            <Image source={images.logo}
             style={styles.image}
             />
-            <View style={styles.numberborder}>
-                <Text style={styles.number}>09228979090</Text>
-                <Octicons
-                    name="arrow-switch"
-                    color={"#F2BB4E"}
-                    size={20}
-                />  
-                </View>
+            
             <Text style={styles.mpin}>Enter your MPIN</Text>
             <View style={{
         

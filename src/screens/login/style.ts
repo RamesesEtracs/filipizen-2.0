@@ -7,7 +7,7 @@ const {width} = Dimensions.get('window')
 
 const dialPadSize = width * .2
 const dialPadTextSize = dialPadSize * .4
-import { color,font } from "../../../constants"
+import { color,font } from "@constants"
 
 
 
@@ -31,7 +31,6 @@ const styles = StyleSheet.create({
         fontFamily: 'Roboto',
     },
     image: {
-        marginTop: 30,
         width: 177,
         height: 51,
     },

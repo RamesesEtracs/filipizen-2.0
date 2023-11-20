@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import { color,font } from "../../constants"
+import { color,font } from "@constants"
 import {SafeAreaView,View, Text, TouchableOpacity, Image, TextInput, KeyboardAvoidingView, Platform, } from 'react-native';
-import styles from '../registration/creatempin.style';
-import ReturnButton from '../components/buttons/returnButton';
+import styles from '@src/registration/creatempin.style';
+import ReturnButton from '@components/buttons/returnButton';
 
 export default function CreateMPIN ({onPress}) {
     const [password, setPassword] = useState('');
