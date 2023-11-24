@@ -10,7 +10,7 @@ const Button: React.FC<buttonProperties> = ({
   buttonNameColor,
   buttonLayout,
   onPress
-  
+
 }) => {
   return (
     <View>

@@ -1,31 +1,37 @@
-import React from 'react';
-import { Stack } from 'expo-router';
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
 
-import  { View, Text, StyleSheet } from 'react-native';
-import Login from '@src/screens/login/Login';
-import Registration from '../src/screens/registration/register/Registration';
-import CreateMPIN from '../src/screens/registration/creatempin/CreateMpin';
-import Congratulations from '../src/screens/registration/congratulations/Congratulations';
-import WelcomePage from '@src/screens/welcome/welcomeScreen';
-import BiometricFunction from '@src/biometricFunction';
+import { View, Text, StyleSheet, SafeAreaView } from "react-native";
 
+import RegistrationStackNavigator from "@src/navigation/RegistrationStackNavigator";
+
+import BottomTabs from "@src/navigation/BottomTabsNavigation";
+
+const MainStack = createStackNavigator();
 
 const Home = () => {
-    return (
-        <View style= {{flex:1}}>
-            <Stack.Screen 
-            options={{
-                headerShown: false
-            }}/>
-            {/*<WelcomePage />*/}
-           {/*<Login />*/}
-          {/*<Registration onPress={undefined} />*/}
-           {/*<CreateMPIN onPress={undefined} />*/}
-           <Congratulations onPress={undefined} />
-        </View>
-    );
-}
+  const isLoggedIn = false;
 
+  return (
+    <MainStack.Navigator screenOptions={{ headerShown: false }}>
+      {isLoggedIn ? (
+        <MainStack.Group>
+          <MainStack.Screen
+            name="Registration"
+            component={RegistrationStackNavigator}
+          />
+        </MainStack.Group>
+      ) : (
+        <MainStack.Group>
+          <MainStack.Screen
+            name="Registration"
+            component={BottomTabs}
+          />
+        </MainStack.Group>
+      )}
+    </MainStack.Navigator>
+  );
+};
 
 export default Home;
-

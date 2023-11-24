@@ -1,41 +1,30 @@
 import React from "react";
-
-
 import { SafeAreaView, View, Image, Text, StatusBar } from "react-native";
-import {Svg, Rect, Path } from 'react-native-svg';
+import { Svg, Rect, Path } from "react-native-svg";
 import { Stack } from "expo-router";
+import { useNavigation } from "@react-navigation/native";
 
 
-//styling
+//styling & constants
 import styles from "./style";
-import buttonStyles from "@components/buttons/button.style";
-
-
-//constants
+import buttonStyles from "@components/Buttons/button.style";
 import { color, textColor } from "@constants";
 import { images } from "@constants";
 
-//components
-import Button from "@components/buttons/button";
 
+//components
+import Button from "@components/Buttons/button";
 
 const WelcomePage = () => {
+  const navigation = useNavigation();
+
   return (
     <SafeAreaView>
-      <View style={{flex: 1, justifyContent: 'center', marginTop: 280}}>
+      <View style={{ flex: 1, justifyContent: "center", marginTop: 280 }}>
         <View style={styles.upperScreenContainer}>
           <View style={styles.bigCircleSVGContainer}>
-            <Svg
-              width="204"
-              height="204"
-              fill="none"
-            >
-              <Rect
-                width="204"
-                height="204"
-                fill={color.fadedWhite}
-                rx="102"
-              />
+            <Svg width="204" height="204" fill="none">
+              <Rect width="204" height="204" fill={color.fadedWhite} rx="102" />
             </Svg>
           </View>
 
@@ -66,12 +55,7 @@ const WelcomePage = () => {
 
         <View style={styles.lowerScreenContainer}>
           <View>
-            <Svg
-              width="500"
-              height="500"
-              fill="none"
-              viewBox="10 1 360 360"
-            >
+            <Svg width="500" height="500" fill="none" viewBox="10 1 360 360">
               <Path
                 fill={color.fadedWhite}
                 d="M236.725 58.8247C245.906 33.8688 249.662 4.9021 306 0v455H4.28V170.681c-23.3698-50.358 52.9992-137.7035 131.037-81.1071 62.431 45.2771 93.619-1.634 101.408-30.7492Z"
@@ -81,9 +65,11 @@ const WelcomePage = () => {
 
           <View style={styles.contentContainer}>
             <View style={styles.textContainer}>
-                <Text style={styles.textHeader}>All in one app</Text>
-                <Text style={styles.textBody}>Experience ease of doing business with the government.</Text>
-            </View>  
+              <Text style={styles.textHeader}>All in one app</Text>
+              <Text style={styles.textBody}>
+                Experience ease of doing business with the government.
+              </Text>
+            </View>
             <View style={buttonStyles.customButtonContainer}>
               <Button
                 buttonLayout={{
@@ -93,16 +79,16 @@ const WelcomePage = () => {
                 }}
                 buttonName="Create an Account"
                 buttonColor={color.primary}
-                buttonNameColor={textColor.white} onPress={function () {
-                  throw new Error("Function not implemented.");
-                } }              />
+                buttonNameColor={textColor.white}
+                onPress={() => navigation.navigate("Registration")}
+              />
             </View>
           </View>
         </View>
         <StatusBar barStyle="default" />
       </View>
     </SafeAreaView>
-  )
-}
+  );
+};
 
 export default WelcomePage;
